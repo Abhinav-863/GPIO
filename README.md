@@ -1,9 +1,9 @@
 # GPIO
 
-#Description:
+# Description:
 This project implements a General Purpose Input Output (GPIO) Controller in Verilog, designed to handle bidirectional data flow across configurable pins. Each pin can be dynamically set as either input or output, allowing flexible use in embedded systems, microcontrollers, and FPGA projects.
 
-#Features:
+# Features:
 1. Supports configurable pin direction for each individual GPIO pin.
 2. Tri-state buffer implementation for handling bidirectional data flow.
 3. Synchronous design using clock and reset signals.
@@ -18,7 +18,7 @@ This project implements a General Purpose Input Output (GPIO) Controller in Veri
 5. gpio_read	-> Output	- Data read from input pins
 6. gpio_pins	-> Inout	- Actual bidirectional GPIO pins
 
-#Operation:
+# Operation:
 1. On reset, all outputs are initialized to 0.
 2. Each pin's direction is controlled by gpio_dir — output when 1, input when 0.
 3. For output pins, data comes from gpio_write.
